@@ -13,3 +13,7 @@ class Newsletter(db.Model):
 
     def __repr__(self):
         return f'<Newsletter {self.title}, published at {self.published_at}.>'
+
+'''
+Using Marshmallow, our models are serialized after they've been generated. This means that we can remove all of the SQLAlchemy-Serializer code from models.py:
+'''
